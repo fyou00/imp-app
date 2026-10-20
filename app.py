@@ -21,4 +21,5 @@ if uploaded_file is not None:
   image_gray = cv2.cvtColor(image_rgb, cv2.COLOR_RGB2GRAY)
   
   st.write('output')
-  st.image(image_gray)  
+  st.image(image_gray)
+ 
