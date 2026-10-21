@@ -22,4 +22,13 @@ if uploaded_file is not None:
   
   st.write('output')
   st.image(image_gray)
- 
+
+  # feat button download
+  success, encoded_image = cv2.imencode(".png", image_gray)
+
+  if success:
+    st.download_button( 
+      label="Download Image", 
+      data=encoded_image.tobytes(),
+      file_name="hasil.png",
+      )
