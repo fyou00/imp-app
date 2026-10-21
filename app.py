@@ -28,7 +28,7 @@ if uploaded_file is not None:
 
   if success:
     st.download_button( 
-      label="Download Image", 
+      "Download Image", 
       data=encoded_image.tobytes(),
       file_name="hasil.png",
-      )
+    )
