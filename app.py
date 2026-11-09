@@ -12,6 +12,8 @@ def cv_grayscale(image):
   
 uploaded_file = st.file_uploader("Please upload an image...", type=["png", "jpg"], max_upload_size=10)
 
+operations = st.button("Grayscale")
+
 if uploaded_file is not None:
   bytes_data = np.frombuffer(uploaded_file.getvalue(), dtype=np.uint8)  
   
